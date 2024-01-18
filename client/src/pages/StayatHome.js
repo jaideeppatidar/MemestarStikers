@@ -10,7 +10,7 @@ const StickerList = () => {
   const route = useRoute();
   const { categoryType } = route.params;
   const leftPress = () => {
-    navigation.navigate(ROUTES.HOME);
+    navigation.navigate(ROUTES.NEW_STICKERS);
   }
   return (
     <View style={styles.container}>
@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
     flexWrap: 'wrap',
+    gap: 10,
   },
 
   stickerContainer: {

@@ -46,33 +46,33 @@ const stickersData = [
   },
 
   {
-    title: 'Christmas',
+    title: 'Smile',
     stickers: [
-      require('../public/newstiker/birth1.png'),
-      require('../public/newstiker/birth2.png'),
-      require('../public/newstiker/birth3.png'),
-      require('../public/newstiker/birth4.png'),
-      require('../public/newstiker/birth5.png'),
+      require('../public/newstiker/smile1.png'),
+      require('../public/newstiker/smile2.png'),
+      require('../public/newstiker/smile3.png'),
+      require('../public/newstiker/smile4.png'),
+      require('../public/newstiker/smile5.png'),
     ],
   },
   {
     title: 'Spring',
     stickers: [
-      require('../public/newstiker/birth1.png'),
-      require('../public/newstiker/birth2.png'),
-      require('../public/newstiker/birth3.png'),
-      require('../public/newstiker/birth4.png'),
-      require('../public/newstiker/birth5.png'),
+      require('../public/newstiker/spring1.png'),
+      require('../public/newstiker/spring2.png'),
+      require('../public/newstiker/spring3.png'),
+      require('../public/newstiker/spring4.png'),
+      require('../public/newstiker/spring5.png'),
     ],
   },
   {
     title: 'Spring',
     stickers: [
-      require('../public/newstiker/birth1.png'),
-      require('../public/newstiker/birth2.png'),
-      require('../public/newstiker/birth3.png'),
-      require('../public/newstiker/birth4.png'),
-      require('../public/newstiker/birth5.png'),
+      require('../public/newstiker/spring1.png'),
+      require('../public/newstiker/spring2.png'),
+      require('../public/newstiker/spring3.png'),
+      require('../public/newstiker/spring4.png'),
+      require('../public/newstiker/spring5.png'),
     ],
   },
   {
@@ -212,6 +212,7 @@ function NewStickers() {
       case 'birthday':
       case 'pets':
       case 'wedding':
+      case 'smile':
       case 'spring':
         navigation.navigate('StayAt', { categoryType: lowercaseTitle, category });
         break;
@@ -219,7 +220,6 @@ function NewStickers() {
         console.warn('Unhandled category:', lowercaseTitle);
     }
   };
-
   return (
     <View style={styles.Container}>
       <TobbarScreen title="New Stickers" onLeftPress={leftPress} leftImage={require('../public/assets/image/left.png')} />
@@ -244,7 +244,6 @@ function NewStickers() {
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   Container: {
     flex: 1,
@@ -268,10 +267,9 @@ const styles = StyleSheet.create({
     color: 'black',
     justifyContent: 'center',
     marginTop: 8,
-    alignItems:'center',
+    alignItems: 'center',
 
   },
-
   CategoryTitle: {
     color: '#000',
     fontFamily: 'Inter',
